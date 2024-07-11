@@ -1,5 +1,3 @@
-
-
 const form = document.getElementById('form');
 const mail = document.getElementById('mail');
 const password = document.getElementById('password');
@@ -63,6 +61,8 @@ form.addEventListener('submit',(e)=>
             })
             .catch((error) => {
                 // Handle any errors here if needed
+                sucess.innerHTML="Login Failed"
+                sucess.style.color="red"
                 console.error('Error:', error);
             });
     }
@@ -75,12 +75,14 @@ form.addEventListener('submit',(e)=>
     setTimeout(() => {
         ad().then(() => {
             loading.style=""
-            loading.innerText = "loginsucessfull";
+            sucess.innerText = "loginsucessfull";
             mail.value=""
             password.value=''
+            loading.style.display="none";
+            
             
         });
-    }, 5000);
+    }, 2000);
     
     ad();
   
