@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+.wrapper{
+    width: 350px;
+    background-color:black ;
+    color: aliceblue;  
+    padding:50px 0px;
+    border-radius:30px;
+    box-shadow:0px 0px 5px 0px green;
+    
+}
+.wrapper:hover{
+    box-shadow:0px 0px 10px 2px green;
+}
+.wrapper h1{
+    text-align: center;
+}
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+   
+    margin: 30px 0px;
+}
+
+.input-box{
+    display:flex;
+    justify-content:center;
+}
+
+.input-box input{
+    width: 80%;
+    height: 80%;
+    background: transparent;
+    border: none;
+    outline:none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size:15px;
+    color:white;  
+    
+    text-indent:15px;
+    
+}
+
+.input-box input::placeholder{
+    color:aliceblue; 
+}
+
+
+.input-box i{
+    position:absolute;  
+}
+.fa-user{
+    top: 36vh;
+    right:520px;
+    font-size:20px
+}
+.fa-lock{
+    top: 50.5vh;
+    right:520px;
+    font-size:20px;
+}
+.fa-lock-open{
+    height:20px;
+    width:20px;
+    display:none;
+    position:relative;
+    right:517.5px;
+    top:50.5vh;
+    font-size:20px;
+    
+}
+
+.remember{
+    display:flex;
+    justify-content:space-between;
+    font-size:15px;
+    width:100%;
+    
+    
+    padding:8px 0px 0px 0px;
+}
+.box{
+    margin-right:20px;
+    width:40%;
+    margin-left:40px;
+    display:flex;
+    gap:0px 5px;
+}
+.remember input{
+    margin-top:2px;
+    cursor:pointer;
+}
+.remember a{
+    text-decoration:none;
+    color:white;
+    width:40%;
+    margin-right:30px;
+}
+.remember a:hover{
+    text-decoration:underline;
+    color:red;
+}
+.button{
+    width:100%;
+    text-align:center;
+}
+.button button{
+    margin:20px 0px 0px 0px;
+    padding:2px 10px;
+    width:120px;
+    height:40px;
+    border-radius:20px;
+    cursor:pointer;
+    border:none;
+}
+#error-mail {
+    left:515px;
+    color:red;
+    wrap:none;
+    position:absolute;
+    top:42.6vh;
+}
+.error-password{
+    left:516px;
+    color:red;
+    wrap:none;
+    position:absolute;
+    top:56.5vh;
+    height:30px;
+    width:250px;
+   
+    padding:3px 0px;
+
+}
+#loading {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 48%;
+    margin-top: 8px;
+    border: 4px solid;
+    border-top-color: red;
+    animation: loading 0.75s ease infinite;
+    display:none
+}
+
+
+
